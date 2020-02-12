@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Liste des joueurs du real</title>
+    <meta charset="utf-8">
+    <style>
+        .menu {
+            list-style-type: none;
+        }
+
+        .menu>li {
+            display: inline-block;
+            /* met les "li" en ligne */
+            margin: 5px;
+        }
+
+        .menu>li>a {
+            display: inline-block;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            font-size: 1.5em;
+        }
+
+        .menu>li:hover {
+            border-bottom: 4px solid rgb(0, 0, 0);
+            /* Ajoute une bordure de bas de couleur bleue au survol de la souris  */
+        }
+
+        .services {
+            position: relative;
+            /* Pour positionner le sous menu par rapport à son parent ".services" */
+        }
+
+        .sous-menu {
+            list-style-type: none;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            max-height: 0;
+            /* Pour cacher le sous menu */
+            overflow: hidden;
+            /* Pour cacher le contenu du sous menu */
+            transition: max-height 0.5s ease;
+            /* transition appliquée sur la propriété max-height */
+            padding: 0;
+            margin: 5px 0;
+        }
+
+        .services:hover>.sous-menu {
+            max-height: 150px;
+            /* Pour afficher le menu après le "hover" */
+
+        }
+
+        .sous-menu>li {
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            line-height: 1.5em;
+            font-size: 1em;
+            padding: 5px 0;
+            border: 1px #fff solid;
+        }
+
+        .sous-menu>li>a {
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            color: #fff;
+        }
+
+        .sous-menu>li:hover {
+            background: rgb(2, 2, 2);
+        }
+
+
+        table {
+            position: relative;
+            left: 50px;
+            top: 0px;
+        }
+
+        table,
+        td {
+            border: 1px solid #333;
+        }
+
+        thead,
+        tfoot {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+ 
+   
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">
+                    <div style="text-align: center;background-color:white; color:gold; font-size:400%;"> Effectif du
+                        Real Madrid</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="joueurs/COURTOIS_380x501.jpg"><br> <a href="FT_COURTOIS.htm"
+                        style=" font-size: 200%;position: relative;left: 115px;color: black;">COURTOIS</a> </td>
+                <td><img src="joueurs/VARANE_380x501.jpg"><br> <a href="FT_VARANE.htm"
+                        style=" font-size: 200%;position: relative;left: 135px;color: black;">VARANE</a> </td>
+                <td><img src="joueurs/RAMOS_380x501.jpg"><br> <a href="FT_RAMOS.htm"
+                        style=" font-size: 200%;position: relative;left: 135px;color: black;">RAMOS</a></td>
+            </tr>
+            <tr>
+                <td><img src="joueurs/CARVAJAL_380x501.jpg"><br> <a href="FT_CARVAJAL.htm"
+                        style=" font-size: 200%;position: relative;left: 115px;color: black;">CARVAJAL</a> </td>
+                <td><img src="joueurs/MARCELO_380x501.jpg"><br> <a href="FT_MARCELO.htm"
+                        style=" font-size: 200%;position: relative;left: 135px;color: black;">MARCELO</a> </td>
+                <td><img src="joueurs/CASEMIRO_380x501.jpg"><br> <a href="FT_CASEMIRO.htm"
+                        style=" font-size: 200%;position: relative;left: 135px;color: black;">CASEMIRO</a> </td>
+            </tr>
+            <tr>
+                <td><img src="joueurs/MODRIC_380x501.jpg"><br> <a href="FT_MODRIC.htm"
+                        style=" font-size: 200%;position: relative;left: 115px;color: black;">MODRIC</a> </td>
+                <td><img src="joueurs/HAZARD_380x501.jpg"><br> <a href="FT_HAZARD.htm"
+                        style=" font-size: 200%;position: relative;left: 135px;color: black;">HAZARD</a></td>
+                <td><img src="joueurs/KROOS.jpg"><br> <a href="FT_KROOS.htm"
+                        style=" font-size: 200%;position: relative;left: 135px;color: black;">KROOS</a> </td>
+            </tr>
+            <tr>
+                <td><img src="joueurs/RODRYGO_380x501.jpg"><br> <a href="FT_RODRYGO.htm"
+                        style=" font-size: 200%;position: relative;left: 115px;color: black;">RODRYGO</a> </td>
+                <td><img src="joueurs/BENZEMA_380x501.jpg"> <br> <a href="FT_BENZEMA.htm"
+                        style=" font-size: 200%;position: relative;left: 135px;color: black;">BENZEMA</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

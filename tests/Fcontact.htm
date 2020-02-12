@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Formulaire de contact</title>
+    <meta http-equiv="pragma" content='no cache' />
+    <meta http-equiv="refresh" content="30" />
+    <meta charset="UTF-8" /> <!-- voilà les commentaires débiles-->
+    <link rel="stylesheet" href="CSS.css">
+</head>
+
+<body>
+    <header style="color: white; background-color:black; font-size: 200%; text-align: center; position:sticky">
+        Formulaire de contact</header>
+    <div>
+        <nav style="position: absolute; right: 550px">
+            <ul class="menu">
+                <li><a href="test_acceuil_project.html" >Home</a></li>
+                <li><a href="shop_list.htm" title="#">Shop</a></li>
+                <li class="services"><a href="#" title="">Real Madrid</a>
+                    <ul class="sous-menu">
+                        <li><a href="REALlegacy.htm" title="">Présentation équipe</a></li>
+                        <li><a href="score.htm" title="">Résultats récents</a></li>
+                        <li><a href="score.htm" title="">Liste matchs coupe d'Europe</a></li>
+                    </ul>
+                </li>
+                <li><a href="fcontact.htm" title="Fcontact">Contact</a></li>
+                <li><a href="doc1.htm" title="Site">Entreprise</a></li>
+            </ul>
+        </nav>
+    </div><br><br><br><br><br><br><br><br>
+    <div style="position:absolute; left: 300px; top:46px;">
+        <img style="position:absolute; left: 0px; top:0px;" src="adidas-100px.png">
+    </div>
+    <div style="height: 320px;background-color:gold; text-align: center; position:relative; top:50px;">
+        <form name="input" action="html_form_action.asp" method="POST">
+            <div> Name: <input type="text" name="firstname">
+                Last name: <input type="text" name="lastname"></div><br>
+            <div>Mail: <input style="width: 300px;" type="email" name="mail"></div><br>
+            <div>
+                <label for="msg">Message :</label>
+                <textarea style="width:400px; height:200px" id="msg" name="user_message"></textarea>
+            </div>
+            <input type="submit" value="envoyer">
+            <br>
+
+        </form>
+    </div>
+    <br>
+    <div style="position: absolute; left:75px; top:160px;">
+        <img style="border-radius: 10%;" src="Benzema-adidas.jpeg">
+    </div>
+    <div style=" position: absolute; right:150px; top:245px;">
+        <img style="border-radius: 10%;" src="386430.jpg">
+    </div>
+</body>
+
+</html>

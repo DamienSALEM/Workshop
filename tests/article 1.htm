@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Article 1</title>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content='no cache' />
+    <meta http-equiv="refresh" content="30" />
+    <link rel="stylesheet" href="CSS.css">
+    <style>
+        .menu {
+            list-style-type: none;
+        }
+
+        .menu>li {
+            display: inline-block;
+            /* met les "li" en ligne */
+            margin: 5px;
+        }
+
+        .menu>li>a {
+            display: inline-block;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            font-size: 1.5em;
+        }
+
+        .menu>li:hover {
+            border-bottom: 4px solid rgb(0, 0, 0);
+            /* Ajoute une bordure de bas de couleur bleue au survol de la souris  */
+        }
+
+        .services {
+            position: relative;
+            /* Pour positionner le sous menu par rapport à son parent ".services" */
+        }
+
+        .sous-menu {
+            list-style-type: none;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            max-height: 0;
+            /* Pour cacher le sous menu */
+            overflow: hidden;
+            /* Pour cacher le contenu du sous menu */
+            transition: max-height 0.5s ease;
+            /* transition appliquée sur la propriété max-height */
+            padding: 0;
+            margin: 5px 0;
+        }
+
+        .services:hover>.sous-menu {
+            max-height: 150px;
+            /* Pour afficher le menu après le "hover" */
+
+        }
+
+        .sous-menu>li {
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            line-height: 1.5em;
+            font-size: 1em;
+            padding: 5px 0;
+            border: 1px #fff solid;
+        }
+
+        .sous-menu>li>a {
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            color: #fff;
+        }
+
+        .sous-menu>li:hover {
+            background: rgb(2, 2, 2);
+        }
+
+
+        table {
+            position: relative;
+            left: 250px;
+            top: 0px;
+        }
+
+        table,
+        td {
+            border: 1px solid #333;
+        }
+
+        thead,
+        tfoot {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav style="position: absolute; right: 550px">
+                <ul class="menu">
+                    <li><a href="test_acceuil_project.html">Home</a></li>
+                    <li><a href="shop_list.htm" title="#">Shop</a></li>
+                    <li class="services"><a href="#" title="">Real Madrid</a>
+                        <ul class="sous-menu">
+                            <li><a href="REALlegacy.htm" title="">Présentation équipe</a></li>
+                            <li><a href="score.htm" title="">Résultats récents</a></li>
+                            <li><a href="score.htm" title="">Liste matchs coupe d'Europe</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="fcontact.htm" title="Fcontact">Contact</a></li>
+                    <li><a href="doc1.htm" title="Site">Entreprise</a></li>
+                </ul>
+            </nav>
+        </div><br><br><br><br><br>
+    </header>
+    <a href="test_acceuil_project.html"><img style="position : absolute ; left: 0px ;top :0px"
+            src="img/core-img/add.png" height="190" width="250" alt="">
+    </a>
+    <P></p>
+    <br><br><br><br><br>
+</body>
+
+<body>
+    <table style="position : absolute;left: 0px;top: 200px">
+        <tbody>
+            <tr>
+
+                <td>
+                    <div class="product-img">
+                        <img style="border-style:solid; border-width:5px ; border-color:gold;"
+                            src="img/product-img/product-1.jpg" height="270" width="270" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li style="font-size:250%;position : relative;left: 0px;"> Chaussure 1</li>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="article 1.html">
+    </a>
+
+
+
+    <p style="position:absolute; top : 300px ;right:400px;font-size:200%;" class="product-desc">Chaussure plutot belle
+        pour faire un foot.</p>
+
+    <p style="position:absolute ; top : 300px;left: 1000px;font-size:400%;" class="product-price"> 55.00€</p>
+
+
+    <button
+        style="position:absolute ; top : 450px;left: 1000px;font-size:200%;border-style:solid;border-width:5px ; border-color:gold;"
+        onclick="window.location.href='reservation.htm'" type="button">Ajouter au Panier</button>
+    <a style="position:absolute;top:500px; right:250px; font-size:300%" href="shop_list.htm">retour au shop</a>
+</body>
